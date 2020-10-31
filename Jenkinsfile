@@ -13,5 +13,17 @@ pipeline {
       }
     }
 
+    stage('sleep') {
+      steps {
+        sh 'sleep 5'
+      }
+    }
+
+    stage('success') {
+      steps {
+        echo 'success'
+      }
+    }
+
   }
 }
